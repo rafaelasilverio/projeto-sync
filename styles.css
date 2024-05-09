@@ -1,0 +1,56 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --tertiary-color: #383a3b;
+    --quaternary-color: #cccccc;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.coluna{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 5%;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--quaternary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--tertiary-color);
+}
+
