@@ -19,138 +19,148 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <section class="coluna user-info text-start">
-        <div class="row">
-          <div class="col-md-3">
-            <figure>
-              <img
-                src="user-image.png"
-                alt="Foto de perfil"
-                class="img-fluid"
-              />
-            </figure>
-          </div>
-          <div class="col-md-9">
-            <div>
-              <h2 id="nome">Nome do usuário</h2>
-              <p id="idade">idade</p>
-            </div>
-          </div>
-        </div>
+  <main class="container">
+    
+        <section class="coluna user-info text-start">
 
-        <div class="row p-4">
-          <div class="col-md-12">
-            <div>
-              <h5>Endereco</h5>
-              <p id="endereco">Endereço do usuário</p>
-            </div>
-            <div>
-              <h5>Biografia</h5>
-              <p id="biografia">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut
-                deserunt cum debitis minima alias earum aspernatur molestias
-                dolores atque. Quia, iste. Consectetur vel corporis doloribus
-                quasi amet tempora? Nisi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="row grid gap-2">
+                    <div class="col-md-3">
+                        <figure>
+                            <img
+                                src="user-image.png"
+                                alt="Foto de perfil"
+                                class="img-fluid"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-md-7">
+                        <h2 id="nome">Nome do usuário</h2>
+                        <p id="idade">idade</p>
+                    </div>
+                </div>
 
-      <section class="coluna atualizar-perfil">
-        <form id="form-atualizar">
+                <div class="row p-4">
+                    <div class="col-md-12">
+                        <div>
+                            <h5>Endereco</h5>
+                            <p id="endereco">Endereço do usuário</p>
+                        </div>
+                        <div>
+                            <h5>Biografia</h5>
+                            <p id="biografia">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut
+                                deserunt cum debitis minima alias earum aspernatur molestias
+                                dolores atque. Quia, iste. Consectetur vel corporis doloribus
+                                quasi amet tempora? Nisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <fieldset>
-          <div class="text-center">
-            <h2>Atualizar Informações</h2>
-          </div>
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome-input" class="form-control" required />
-          </div>
-          <div class="form-group">
-            <label for="idade">Idade</label>
-            <input
-              type="number"
-              id="idade-input"
-              class="form-control"
-              required
-            />
-          </div>
-        </fieldset>
+        </section>
 
+        <section class="coluna atualizar-perfil">
+            <form id="form-atualizar">
+                <div class="text-center">
+                    <h2>Atualizar Informações</h2>
+                </div>
+                <fieldset>
 
-        <fieldset>
-          <div class="form-group">
-            <label for="endereco">Endereco</label>
-            <input
-              type="text"
-              placeholder="Rua"
-              id="rua-input"
-              class="form-control"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Bairro"
-              id="bairro-input"
-              class="form-control"
-              required
-            />
-            <select id="estado-input" class="form-control" required>
-              <option value="">Selecione um estado</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-          </div>
-        </fieldset>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome-input"
+                            class="form-control"
+                            required
+                        />
+                    </div>
 
-        <fieldset>
-          <div class="form-group">
-            <label for="biografia">Biografia</label>
-            <textarea
-              id="biografia-input"
-              class="form-control"
-              required
-            ></textarea>
-          </div>
-        </fieldset>
+                    <div class="form-group">
+                        <label for="idade">Idade</label>
+                        <input
+                            type="number"
+                            id="idade-input"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                </fieldset>
 
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary w-100">
-              Atualizar
-            </button>
-          </div>
-        </form>
-      </section>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="endereco">Endereco</label>
+                        <input
+                            type="text"
+                            placeholder="Rua"
+                            id="rua-input"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            placeholder="Bairro"
+                            id="bairro-input"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <select id="estado-input" class="form-control" required>
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-group">
+                        <label for="biografia">Biografia</label>
+                        <textarea
+                            id="biografia-input"
+                            class="form-control"
+                            required
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100">
+                        Atualizar
+                    </button>
+                </div>
+                
+            </form>
+        </section>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
